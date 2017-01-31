@@ -19,7 +19,7 @@
 
 
 
-        <ListView x:Name="listView" Margin="10,10,10,292" SelectionChanged="listView_SelectionChanged" ItemsSource="{Binding SingletonRef}"/>
+        <ListView x:Name="listView" Margin="10,10,10,292" SelectionChanged="listView_SelectionChanged" ItemsSource="{Binding SingletonRef.EventList}"/>
 
     </Grid>
 </Page>

@@ -10,7 +10,6 @@ namespace EventMaker.Model
     public class EventCatalogSingleton
     {
         public static EventCatalogSingleton Singleton = new EventCatalogSingleton();
-
         public ObservableCollection<Event> EventList { get; set; }
 
         public EventCatalogSingleton()
@@ -19,6 +18,8 @@ namespace EventMaker.Model
             EventList.Add(new Event(2643, "Musical", "Få en fantastisk oplevelse med dygtige skuespillere og sangere!", "Koncertsalen", new DateTime(2017, 04, 10)));
             EventList.Add(new Event(5121, "Sommerfest", "Kom til den årlige sommefest med dit bedste grillkød og godt humør!", "Udendørsarealet", new DateTime(2017, 06, 27)));
         }
+
+        
 
         //Spørgsmål til opgave 1,6 : Hvorfor skal vi lave en Add-metode, da dette allerede eksistere i systemet gennem ObservableCollection?
     }
